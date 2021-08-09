@@ -24,13 +24,20 @@ export class CardsComponent implements OnInit {
   }
 
   getCards(page: number = 1, pageSize: number = 10): void {
+    this.loadingService.start();
+
     this.cardsService.getCards(page, pageSize).subscribe(
       (cards: Card[]) => {
-        console.log(cards)
+        console.log(`CARDS PAGE ${page}`, cards);
       },
 
       (error) => {
+        console.error(error)
+        this.errorService.setError();
+      },
 
+      () => {
+        this.loadingService.stop();
       }
     );
   }

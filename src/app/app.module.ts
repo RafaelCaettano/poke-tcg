@@ -1,3 +1,4 @@
+import { LoadingModule } from './shared/components/loading/loading.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
@@ -12,6 +13,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    LoadingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
