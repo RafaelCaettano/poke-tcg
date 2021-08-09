@@ -16,15 +16,24 @@ export class ErrorService {
 	});
 
 	errors = new Map([
-    [
-      'GENERIC',
-      {
-        icon: '',
-        title: '',
-        description: '',
-        link: ''
-      }
-    ]
+		[
+			'GENERIC',
+			{
+				icon: '',
+				title: '',
+				description: '',
+				link: ''
+			}
+		],
+		[
+			'WHITOUT_CARDS',
+			{
+				icon: '',
+				title: '',
+				description: '',
+				link: ''
+			}
+		]
 	]);
 
 	constructor(private router: Router) { }

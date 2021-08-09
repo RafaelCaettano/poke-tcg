@@ -1,0 +1,1 @@
+export const POKEMON_TCG_API = 'https://api.pokemontcg.io/v2';
